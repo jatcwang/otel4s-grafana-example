@@ -1,14 +1,14 @@
 version: '3.7'
 services:
-  otel4s-grafana-example:
-    image: otel4s-grafana-example:0.1.0-SNAPSHOT
-    environment:
-      OTEL_EXPORTER_OTLP_ENDPOINT: "http://otel-collector:4317"
-    restart: on-failure
-    ports:
-      - "8080:8080"
-    networks:
-      - static-network
+#  otel4s-grafana-example:
+#    image: otel4s-grafana-example:0.1.0-SNAPSHOT
+#    environment:
+#      OTEL_EXPORTER_OTLP_ENDPOINT: "http://otel-collector:4317"
+#    restart: on-failure
+#    ports:
+#      - "8080:8080"
+#    networks:
+#      - static-network
 
   otel-collector:
     image: otel/opentelemetry-collector-contrib
